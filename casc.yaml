@@ -54,11 +54,11 @@ jobs:
           }
         }
         triggers {
-          githubPush()
+          scm('*/1 * * * *')
         }
       }
      
-  # end testing
+  # end testing githubPush()
 
 security:
   queueItemAuthenticator:
