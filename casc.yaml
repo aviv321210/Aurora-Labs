@@ -12,6 +12,51 @@ jenkins:
         - "Overall/Read:authenticated"
   remotingSecurity:
     enabled: true
+  # testing
+#1
+#on:
+#pull_request:
+#  branches:
+#    - master
+#  types: [closed]
+#jobs: 
+#  runpy:
+#    if: github.event.pull_request.merged == true
+#    steps: // the rest of the code
+
+#2
+#jobs:
+#  - pipelineJob("DevopsJob"):
+#      definition:
+#        cpsScm:
+#          scm:
+#            git:
+#              remote:
+#                url: 'https://github.com/aviv321210/Aurora-Labs'
+#              branch: '*/main'
+#            scriptPath: 'jenkinsfile'
+        
+#3
+jobs:
+  - script: >
+      pipelineJob('Devops is great') {
+        definition {
+          cpsScm {
+            scm {
+              git{
+                remote{
+                  url('https://github.com/aviv321210/Aurora-Labs')
+                }
+                branch('*/main')
+              }
+              scriptPath('jenkinsfile')
+            }
+          }
+        }
+      }
+     
+  # end testing
+
 security:
   queueItemAuthenticator:
     authenticators:

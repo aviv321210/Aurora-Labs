@@ -1,11 +1,17 @@
 configuration-as-code:latest
 python:latest
+github:latest
 git:latest
 github-branch-source:latest
+github-api:latest
+ghprb:latest
+credentials:latest
+plain-credentials:latest
 pipeline-github-lib:latest
 pipeline-stage-view:latest
 matrix-auth:latest
 authorize-project:latest
+job-dsl:latest
 #ant:latest
 #antisamy-markup-formatter:latest
 #build-timeout:latest
