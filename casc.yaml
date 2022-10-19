@@ -49,7 +49,7 @@ jobs:
                 }
                 branch('*/main')
               }
-              scriptPath('jenkinsfile')
+              scriptPath('Jenkinsfile')
             }
           }
         }

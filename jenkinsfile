@@ -8,7 +8,7 @@ pipeline {
     }
     stage('main') {
       steps {
-        sh 'python app/main.py'
+        sh 'python /usr/share/jenkins/main.py'
       }
     }
   }

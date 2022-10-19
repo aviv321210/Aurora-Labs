@@ -9,6 +9,8 @@ credentials:latest
 plain-credentials:latest
 pipeline-github-lib:latest
 pipeline-stage-view:latest
+pipeline-stage-step:latest
+pipeline-model-definition:latest
 matrix-auth:latest
 authorize-project:latest
 job-dsl:latest
