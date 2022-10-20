@@ -5,13 +5,12 @@ services:
     build: 
       context: .
       dockerfile: DockerFile
-    image: docker.io/aviv321210/auroralabs:latest
-    #privileged: true
-    #user: root
+    image: auroralabs:latest
     environment:
     - JENKINS_ADMIN_ID=admin
     - JENKINS_ADMIN_PASSWORD=password
     ports:
+    - 443:8443
     - 8080:8080
     - 50000:50000
     container_name: jenkins
