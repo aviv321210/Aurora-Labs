@@ -1,4 +1,7 @@
 # Aurora-Labs
-Aurora Labs Devops exam
-run docker container run --name jenkins --rm -p 8080:8080 --env JENKINS_ADMIN_ID=admin --env JENKINS_ADMIN_PASSWORD=password aviv321210/auroralabs:latest
-test
+Aurora Labs Devops exam:
+first clone this repository to your local mechine : https://github.com/aviv321210/Aurora-Labs
+run the following command to start jenkins service
+docker compose -f "Aurora-Labs\docker-compose.yml" up -d --build 
+then access it with the url : https://localhost or http://localhost:8080 
+

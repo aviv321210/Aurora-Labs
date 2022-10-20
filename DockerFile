@@ -10,4 +10,4 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt update && apt install -y python && apt install -y openjdk-11-jdk-headless && rm -rf /var/lib/apt/lists/*
 RUN keytool -genkey -keyalg RSA -alias selfsigned -dname "CN=Aviv Haviv, OU=Unknown, O=Unknown, L=Unknown, ST=Unknown, C=Unknown" -destkeystore /var/jenkins_home/jenkins_keystore.jks \
 -storepass mypassword -keysize 2048;
-ENV JENKINS_OPTS --httpPort=-1 --httpsPort=8443 --httpsKeyStore="/var/jenkins_home/jenkins_keystore.jks" --httpsKeyStorePassword="mypassword"
+ENV JENKINS_OPTS --httpsPort=8443 --httpsKeyStore="/var/jenkins_home/jenkins_keystore.jks" --httpsKeyStorePassword="mypassword"
